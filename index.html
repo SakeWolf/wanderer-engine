@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html data-ng-app="WandererApp" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wanderer Engine</title>
+    <script src="js/jquery/jquery-2.1.4.js"></script>
+    <script src="js/angular/angular.js"></script>
+
+    <script src="js/Wanderer.js"></script>
+
+    <link href="css/reset.css" type="text/css" rel="stylesheet"/>
+    <link href='http://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
+
+    <link href="css/base.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <div data-ng-controller="GameController" id="game">
+        <div id="sidebar">
+            <div id="player-info" class="sidebar-component">
+                <h1>Player Information</h1>
+                <ul>
+                    <li><b>Name: </b>Chase Nocturne</li>
+                    <li><b>Species: </b>wolf</li>
+                    <li><b>Gender: </b>male</li>
+                    <li><b>HP: </b>50/50</li>
+                </ul>
+                <p>
+                    You have gray fur and gold eyes. Your build is lithe yet toned, like that a runner would have. Your demeanor is relaxed, yet you carry a spark in your gaze regardless.
+                    <br>
+                    <br>
+                    I need to put in more text, so argle flarble blargle dargle margle darg! Think you got what it takes to blargle your flargle like me? Blarg!
+                </p>
+            </div>
+            <div id="location-info" class="sidebar-component">
+                <h1>Location Information</h1>
+                <ul>
+                    <li><b>Name: </b>San Francisco</li>
+                    <li><b>Zone: </b>SOMA</li>
+                </ul>
+                <p>
+                    You're in the city of San Francisco, a port town in which technology has grown at an unprecedented rate. The northern capital of Silicon Valley, many software companies exist here, from the giants to the newest start-ups.
+                    <br>
+                    <br>
+                    Despite its slight grittiness, SOMA has grown into the home of countless start-ups aiming to make a name for themselves. Many a young professional can be found here.
+                </p>
+            </div>
+            <div id="player-action" class="sidebar-component">
+                <h1>Player Actions</h1>
+                <label>Input:</label>
+                <form data-ng-submit="processUserInput()">
+                    <input data-ng-model="userResponseText" type="text" placeholder="Enter some text input, user!" name="user-input" id="user-input"/>
+                    <input type="submit" placeholder="Send that text input, user!" value="Send" id="user-send"/>
+                </form>
+            </div>
+        </div>
+
+        <div id="viewport">
+            <ul>
+                <li data-ng-repeat="response in responses">
+                    <div class="response {{response.type}}-response">
+                        <p>
+                            {{response.responder}}: {{response.text}}
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

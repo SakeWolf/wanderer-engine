@@ -1,0 +1,101 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar-component {
+    width: 95%;
+    margin: 1em;
+    border: solid 1px #FF3300;
+    overflow-y: scroll;
+}
+
+.sidebar-component * {
+    padding: 0.6em;
+}
+
+.sidebar-component h1 {
+    font-size: 1.5em;
+    font-weight: 900;
+    padding: 0.4em;
+    color: #FF3300;
+}
+
+.sidebar-component ul li {
+    padding: 0;
+}
+
+.sidebar-component ul li b {
+    font-weight: 900;
+    color: #FF3300;
+    padding: 0;
+}
+
+.sidebar-component label {
+    font-weight: 900;
+    color: #FF3300;
+}
+
+.response {
+    width: 95%;
+    margin: 1em;
+}
+
+.response * {
+    padding: 0.6em;
+}
+
+.system-response {
+    border: solid 1px #FF3300;
+}
+
+.user-response {
+    border: solid 1px #606060;
+}
+
+#game {
+    height: 100%;
+    width: 100%;
+}
+
+#sidebar {
+    height: 100%;
+    width: 30%;
+    float: left;
+}
+
+#viewport {
+    height: 100%;
+    width: 70%;
+    float: right;
+    overflow-x: scroll;
+}
+
+#player-info {
+    height: 27.5%;
+}
+
+#location-info {
+    height: 27.5%;
+}
+
+#player-action {
+    height: 35%;
+}
+
+#user-input {
+    width: 75%;
+    border: solid 1px #FF3300;
+    font-family: 'Jura', sans-serif;
+    color: #606060;
+}
+
+#user-send {
+    margin: 0.6em;
+    background-color: #FFFFFF;
+    border: solid 1px #FF3300;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    font-family: 'Jura', sans-serif;
+}
