@@ -1,0 +1,6 @@
+Release 0.1.0 ("Auspicious Aardwolf")
+> Project created, git repo set up, initial commit, wahoo!
+> Developed basic UI components using HTML, CSS and JS
+> Integration of JQuery and AngularJS
+> Ability to enter and process an input from a user
+> Integration of Jasmine for unit testing
