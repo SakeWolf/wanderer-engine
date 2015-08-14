@@ -1,3 +1,7 @@
+Release 0.1.1 - 8/14/15
+> Added .gitignore to the repo to avoid checking in gaff
+> Added an icon
+
 Release 0.1.0 ("Auspicious Aardwolf")
 > Project created, git repo set up, initial commit, wahoo!
 > Developed basic UI components using HTML, CSS and JS
